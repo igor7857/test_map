@@ -9,7 +9,7 @@ body {
 }
 
 .sidebar {
-    width: 200px;
+    width: 300px;
     background-color: #f0f0f0;
     padding: 20px;
     overflow-y: scroll;
@@ -38,4 +38,17 @@ body {
 
 #layer-list label {
     user-select: none; /* Это также предотвратит выделение текста при клике на label */
+}
+
+.subgroup-content.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
