@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Layered Image Viewer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Layers</h2>
+            <ul id="layer-list">
+                <li class="layer-item">
+                    <input type="checkbox" id="layer1" class="layer-checkbox">
+                    <label for="layer1">Основа</label>
+                </li>
+                <li class="layer-item">
+                    <input type="checkbox" id="layer2" class="layer-checkbox">
+                    <label for="layer2">Сундуки</label>
+                </li>
+                <li class="layer-item">
+                    <input type="checkbox" id="layer3" class="layer-checkbox">
+                    <label for="layer3">Уровни</label>
+                </li>
+                <!-- СЮДА МОЖНО ДОБАВЛЯТЬ НОВЫЕ ЧЕКБОКСЫ -->
+            </ul>
+        </div>
+        <div class="main">
+            <img src="основа.png" alt="Layer 1" class="layer" id="layer1-img">
+            <img src="сундуки.png" alt="Layer 2" class="layer" id="layer2-img">
+            <img src="уровни.png" alt="Layer 3" class="layer" id="layer3-img">
+            <!-- СЮДА МОЖНО ДОБАВЛЯТЬ НОВЫЕ КАРТИНКИ -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

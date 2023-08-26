@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.main {
+    flex: 1;
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.layer-item {
+    margin-bottom: 10px;
+    user-select: none; /* Это свойство предотвратит выделение текста */
+}
+
+.layer-checkbox {
+    margin-right: 5px;
+}
+
+#layer-list label {
+    user-select: none; /* Это также предотвратит выделение текста при клике на label */
+}
