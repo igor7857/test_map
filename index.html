@@ -10,21 +10,37 @@
     <div class="container">
         <div class="sidebar">
             <ul id="layer-list">
+                <!-- скрытый чекбокс вне подгруппы который отвечает за основной первый слой -->
+                <input type="checkbox" id="layer1" class="layer-checkbox visually-hidden" checked disabled>
+                <br>
                 <!-- Первая подгруппа -->
-                    <input type="checkbox" id="layer1" class="layer-checkbox visually-hidden" checked disabled>
+                <button class="toggle-subgroup-btn">Заголовок</button>
+                <button class="enable-all-btn">Показать</button>
+                <button class="disable-all-btn">Скрыть</button>
+                <div class="subgroup-content">
+                    <input type="checkbox" id="layer2" class="layer-checkbox" checked>
+                    <label for="layer2">Сундуки</label>
                     <br>
-                    <button class="toggle-subgroup-btn">Заголовок</button>
-                    <button class="enable-all-btn">Показать</button>
-                    <button class="disable-all-btn">Скрыть</button>
-                    <div class="subgroup-content">
-                        <input type="checkbox" id="layer2" class="layer-checkbox" checked>
-                        <label for="layer2">Сундуки</label>
-                        <br>
-                        <input type="checkbox" id="layer3" class="layer-checkbox" checked>
-                        <label for="layer3">Уровни</label>
-                        <br>
-                        <!-- Добавьте остальные чекбоксы для этой подгруппы -->
-                    </div>
+                    <input type="checkbox" id="layer3" class="layer-checkbox" checked>
+                    <label for="layer3">Уровни</label>
+                    <br>
+                    <!-- Добавьте остальные чекбоксы для этой подгруппы у каждого чекбокса должен быть свой for="layerX" и id="layerX"  -->
+                </div>
+
+                <!-- Вторая подгруппа -->
+                <button class="toggle-subgroup-btn">Заголовок</button>
+                <button class="enable-all-btn">Показать</button>
+                <button class="disable-all-btn">Скрыть</button>
+                <div class="subgroup-content">
+                    <input type="checkbox" id="layer4" class="layer-checkbox" checked>
+                    <label for="layer4">4</label>
+                    <br>
+                    <input type="checkbox" id="layer5" class="layer-checkbox" checked>
+                    <label for="layer5">5</label>
+                    <br>
+                    <!-- Добавьте остальные чекбоксы для этой подгруппы у каждого чекбокса должен быть свой for="layerX" и id="layerX"  -->
+                </div>
+
             </ul>
         </div>
         <div class="main">
